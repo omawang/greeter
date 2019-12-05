@@ -1,5 +1,5 @@
 const Greeter = (name: string) => {
-  return `Hello ${name}`
+  return `Hi ${name}`
 }
 
 export default Greeter
