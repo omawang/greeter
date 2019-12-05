@@ -1,0 +1,35 @@
+{
+  "name": "greeter",
+  "version": "1.0.0",
+  "description": "A nice greeter",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "omawang <mas.awank100@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omawang/greeter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omawang/greeter/issues"
+  },
+  "homepage": "https://github.com/omawang/greeter#readme",
+  "files": [
+    "lib/**/*"
+  ]
+}
